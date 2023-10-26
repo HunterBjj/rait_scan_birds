@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+<form method="post" action="{% url 'auth' %}"> {% csrf_token %}
+    <style>
+            .center {
+                text-align: center;
+                 }
+            .btn {
+                text-align: center
+                display: inline-block; /* Строчно-блочный элемент */
+                background: #8C959D; /* Серый цвет фона */
+                color: #fff; /* Белый цвет текста */
+                padding: 1rem 1.5rem; /* Поля вокруг текста */
+                text-decoration: none; /* Убираем подчёркивание */
+                border-radius: 3px; /* Скругляем уголки */
+                text-align: center;
+                }
+    </style>
+    <div class="center">
+    <h3 style="center">Вход</h3>
+        <font color="red" size="4" >
+            <td>{{ Error }}</td>
+        </font>
+        <br>
+            <input name="login" maxlength="80" minlength="1" type="text" placeholder="Логин" />
+        <br>
+        <br>
+        <div class="center">
+          <input name="password" maxlength="80" minlength="3" type="password"   placeholder="Код пароль" />
+        </div>
+        <br>
+        <input type="submit" value="Авторизация" class="btn"/>
+    </div>
+</form>
+</body>
+</html>
