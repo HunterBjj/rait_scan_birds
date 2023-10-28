@@ -77,6 +77,17 @@
 #slaid3:checked~.adaptivny-slayder-lasekun .abusteku-deagulus {
   transform: translateX(-200%);
 }
+.soundbutton {
+	position: fixed;
+	bottom: 5vh;
+	right: 5vw;
+	cursor: pointer;
+	width: 24px;
+	transition: .25s ease;
+}
+.soundbutton.paused {
+	opacity: .25;
+}
 
     </style>
 <div class="adaptivny-slayder">
@@ -88,7 +99,7 @@
   <div class="adaptivny-slayder-lasekun">
   <div class="abusteku-deagulus">
       {% for bird in birds %}
-        <div class="kadoves">
+        <div class="item">
             <label for="slaid1"></label>
         <img src="/{{ bird.PNG }}" alt="" width="600" height="650">
             <td>Птица: {{ bird.name }} Цвет: {{ bird.feather_color}}</td>

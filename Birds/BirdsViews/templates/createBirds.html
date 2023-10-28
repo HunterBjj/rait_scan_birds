@@ -3,10 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
 </head>
 <body>
-<form action=""> {% csrf_token %}
-
+<div class="center">
+<form action="creatBirds" method="post"> {% csrf_token %}
+    <style>
+            .center {
+                text-align: center;
+                 }
+            .btn {
+                text-align: center
+                display: inline-block; /* Строчно-блочный элемент */
+                background: #8C959D; /* Серый цвет фона */
+                color: #fff; /* Белый цвет текста */
+                padding: 1rem 1.5rem; /* Поля вокруг текста */
+                text-decoration: none; /* Убираем подчёркивание */
+                border-radius: 3px; /* Скругляем уголки */
+                text-align: center;
+                }
+    </style>
+    <div class="center">
+        <br>
+    <p>Добавить птицу</p>
+    <input name="name" maxlength="100" minlength="1" type="text" placeholder="Наименвание птицы" required />
+        <br>
+    <input name="name" maxlength="70" minlength="1" type="text" placeholder="Цвет перьев" required />
+   <p>Загрузите фото птицы <input type="file" name="photo" multiple accept="image/*,image/jpeg" required>
+       <br>
+   <input type="submit" value="Отправить"></p>
+</div>
 </form>
 </body>
 </html>

@@ -34,6 +34,8 @@ def rgstrUser(request):
         user.login = request.POST.get("login")
         user.password = request.POST.get("password")
         user.mail = request.POST.get("email")
+        return render(request, '/')
+
 
 def viewBirds(request):
     birds = Birds.objects.all()
@@ -47,3 +49,5 @@ def creatBirds(request):
         birds.feather_color = request.POST.get('color')
         birds.PNG = request.POST.get('PNG')
         birds.save()
+        return render(request, 'createBirds.html/')
+    return render(request, 'createBirds.html/')
