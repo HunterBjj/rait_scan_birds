@@ -7,4 +7,4 @@
 
   Приложение состоит из пяти html страниц:
   ![image](https://github.com/HunterBjj/rait_scan_birds/assets/64096687/91718111-901c-41ab-ad04-a3f0b0d8f28a)
-    Вход
+    Рисунок 1 - Авторизация
