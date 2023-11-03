@@ -1,4 +1,4 @@
-[image](https://github.com/HunterBjj/rait_scan_birds/assets/64096687/bdbe9019-5c83-4e55-8ef6-a7cdba6d2efe)
+<p align="center"> ![image](https://github.com/HunterBjj/rait_scan_birds/assets/64096687/2e616eee-d915-4dca-bef9-c51a0db2bfde) </p>
 # Тестовое задание компании РайтСкан
 
 
