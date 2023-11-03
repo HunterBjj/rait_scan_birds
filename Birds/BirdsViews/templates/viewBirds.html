@@ -6,10 +6,11 @@
 </head>
 <body>
 <form action="{% url 'viewBirds' %}" method="post"> {% csrf_token %}
-<style>
+    <input type="hidden" name="login" value="{{ login }}">
+    <style>
 .adaptivny-slayder {
   position: relative;
-  max-width: 680px;
+  max-width: 950px;
   margin: 50px auto;
   box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.75);
 }
@@ -88,25 +89,42 @@
 .soundbutton.paused {
 	opacity: .25;
 }
+    <style>
+            .center {
+                text-align: center;
+                 }
+            .btn {
+                text-align: center
+                display: inline-block; /* Строчно-блочный элемент */
+                background: #8C959D; /* Серый цвет фона */
+                color: #fff; /* Белый цвет текста */
+                padding: 1rem 1.5rem; /* Поля вокруг текста */
+                text-decoration: none; /* Убираем подчёркивание */
+                border-radius: 3px; /* Скругляем уголки */
+                text-align: center;
+                }
+    </style>
 
     </style>
-<div class="adaptivny-slayder">
-  <input type="radio" name="kadoves" id="slaid1" checked>
-  <input type="radio" name="kadoves" id="slaid2">
-  <input type="radio" name="kadoves" id="slaid3">
-
-  </div>
-  <div class="adaptivny-slayder-lasekun">
-  <div class="abusteku-deagulus">
-      {% for bird in birds %}
-        <div class="item">
-            <label for="slaid1"></label>
-        <img src="/{{ bird.PNG }}" alt="" width="600" height="650">
-            <td>Птица: {{ bird.name }} Цвет: {{ bird.feather_color}}</td>
-    {% endfor %}
-  </div>
-  </div>
-</div>
+    <a href="/creatBirds.html/">
+        <button type="button" class="btn" aria-posinset="center"/> Добавить птицу </button>
+    </a>
+    <div class="adaptivny-slayder">
+    <div class="adaptivny-slayder-lasekun">
+        <div class="abusteku-deagulus">
+            {% for bird in birds %}
+            <div class="item">
+                <label></label>
+                <input type="hidden" name="id_birds" value="{{ bird.id_birds }}">
+                <img src="/{{ bird.PNG }}" alt="" width="600" height="650">
+                <td>Птица: {{ bird.name }}; Цвет: {{ bird.feather_color }}</td>
+                <button type="button" class="bnt" name="save">Добавить в просмотренные</button>
+                {% endfor %}
+            </div>
+                </div>
+        </div>
+    </div>
+    <br>
 </form>
 </body>
 </html>

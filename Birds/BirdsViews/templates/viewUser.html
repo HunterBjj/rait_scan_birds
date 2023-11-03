@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="viewUser"> {% csrf_token %}
+    <title>Просмотр птиц пользователем: {{ login }}</title>
+  <div class="abusteku-deagulus">
+      {% for bird in view %}
+        <div class="item">
+            <label></label>
+        <img src="/{{ bird.PNG }}" alt="" width="600" height="650">
+            <td>Птица: {{ bird.name }} Цвет: {{ bird.feather_color}}</td>
+              <td>Дата и время просмотра: {{ bird.DataTime }}</td>
+      {% endfor %}
+  </div>
+</form>
+</body>
+</html>
