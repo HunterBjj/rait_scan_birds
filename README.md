@@ -10,4 +10,4 @@
    <p align="center"> Рисунок 1 - Авторизация </p>
 
   ![image](https://github.com/HunterBjj/rait_scan_birds/assets/64096687/6d0997ff-8cce-4ac3-b6f5-1e95d3589711)
-    Рисунок 2 - Регистрация
+    <center> Рисунок 2 - Регистрация </center>
