@@ -1,4 +1,5 @@
-# Тестовое задание компании Райт Скан
+# Тестовое задание компании РайтСкан ![image](https://github.com/HunterBjj/rait_scan_birds/assets/64096687/bdbe9019-5c83-4e55-8ef6-a7cdba6d2efe)
+
 
 Для запуска приложение необходимо:
 - git clone https://github.com/HunterBjj/rait_scan_birds;
