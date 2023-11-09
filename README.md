@@ -20,6 +20,7 @@
   ![image](https://github.com/HunterBjj/rait_scan_birds/assets/64096687/2c4e3478-68e8-409c-a5eb-a0b69f357294)
     <p align="center"> Рисунок 4 - Регистрация птицы </p>
 
+  ![image](https://github.com/HunterBjj/rait_scan_birds/assets/64096687/a0aa5852-1c14-49e2-8f5a-05910f8dc3c3)
     <p align="center"> Рисунок 5 - Просмотренны птицы (избранные) </p>
 
       База данных SQLlite состоит из трех таблиц:
