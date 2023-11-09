@@ -16,7 +16,8 @@
     
   ![image](https://github.com/HunterBjj/rait_scan_birds/assets/64096687/3ad58ada-8f93-4749-b67f-abb7c177be63)
     <p align="center"> Рисунок 3 - Просмотр птиц </p>
-
+  
+  ![image](https://github.com/HunterBjj/rait_scan_birds/assets/64096687/2c4e3478-68e8-409c-a5eb-a0b69f357294)
     <p align="center"> Рисунок 4 - Регистрация птицы </p>
 
     <p align="center"> Рисунок 5 - Просмотренны птицы (избранные) </p>
